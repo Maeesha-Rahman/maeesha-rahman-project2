@@ -55,3 +55,69 @@
         }
     }
 }
+
+.contact__form {
+    background-color: $bg-color-2;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    padding-left: 60px;
+    margin-right: 5%;
+    margin-left: 5%;
+    padding-right: 60px;
+    -webkit-box-shadow: 46px 43px 0px -16px rgba(255,131,39,1);
+    -moz-box-shadow: 46px 43px 0px -16px rgba(255,131,39,1);
+    box-shadow: 46px 43px 0px -16px rgba(255,131,39,1);
+    transform: translateY(-35%);
+    
+    input {
+            background-color: $bg-color-2;
+            border: none;
+            color: $accent-color-2;
+            border-bottom: 1px solid $accent-color-2;
+        }
+
+        ::placeholder {
+            color: $accent-color-2;
+            @include primary-font(1.95rem);
+            line-height: 30px;
+            letter-spacing: 1.9px;
+        }
+
+        input[type=email] {
+            padding-left: 30px;
+            padding-right: 302px;
+            padding-bottom: 30px;
+            margin-left: 12.5px;
+        }
+
+        input[type=text] {
+            padding-left: 30px;
+            padding-right: 302px;
+            padding-bottom: 30px;
+            margin-right: 12.5px;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            padding: 4px 0;
+            color: $accent-color-2;
+            border: none;
+            background-color: $accent-color-3;
+            text-transform: capitalize;
+            @include logo-heading(2rem);
+            &:hover {
+                background: $accent-color;
+            }
+        }
+
+    textarea {
+        color: $accent-color-2;
+        background: $bg-color-2;
+        border: 1px solid $accent-color-2;
+        margin: 50px 0;
+        padding-left: 30px;
+        resize: none;
+        padding-top: 40px;
+        width: 100%;
+    }
+}

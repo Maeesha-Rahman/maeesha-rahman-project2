@@ -1,0 +1,40 @@
+.main__contact {
+    background-color: $bg-color;
+    display: flex;
+}
+
+.aside__contact {
+    width: 40%;
+    padding-left: 120px;
+    padding-top: 100px;
+
+    p {
+        margin: 0;
+    }
+
+    p.email {
+        margin-bottom: 30px;
+    }
+
+    &--social {
+        ul {
+            display: flex;
+        }
+
+        li a {
+            padding: 10px;
+            color: $accent-color-2;
+        }
+
+        a:hover {
+            color: $accent-color;
+        }
+
+        padding-left: 2.5%;
+    }
+
+    &--info {
+        padding-left: 5%;
+    }
+}
+

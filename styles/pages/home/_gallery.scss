@@ -1,0 +1,13 @@
+.gallery {
+    background-color: $bg-color-2;
+    padding: 100px 0px;
+    .wrapper {
+        display: flex;
+        // flex-wrap: wrap;
+    }
+
+    &__item {
+        width: calc((100% / 3) - 30px);
+        margin: 0px 15px;
+    }
+}

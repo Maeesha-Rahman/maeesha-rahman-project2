@@ -1,0 +1,11 @@
+.button {
+    padding: 10px 30px;
+    background-color: $accent-color-3;
+    color: $accent-color-2;
+    text-transform: capitalize;
+    @include logo-heading(2rem);
+
+    &:hover {
+        background: $accent-color;
+    }
+}

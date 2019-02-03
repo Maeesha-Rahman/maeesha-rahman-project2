@@ -1,0 +1,41 @@
+.header {
+    min-height: 100vh;
+    background: url(../assets/home-image-1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+    &__box {
+        width: 50%;
+        position: absolute;
+        right: 0;
+        bottom: -22%;
+    }
+
+    &__content {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+        h1 {
+            @include logo-heading(13.07rem);
+            letter-spacing: 2.4px;
+            color: $accent-color;
+            text-transform: capitalize;
+            // display: inline-block;
+        }
+
+        .motto {
+            letter-spacing: 2.6px;
+            // line-height: 94.7px;
+            line-height: 2.4;
+            color: $accent-color-2;
+            @include secondary-font(4.16rem);
+            display: block;
+            margin-left: 2%;
+            text-align: left;
+            text-transform: none;
+        }
+    }
+}

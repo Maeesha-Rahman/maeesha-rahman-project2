@@ -1,0 +1,19 @@
+.host {
+    display: flex;
+    flex-direction: column;
+    background-color: $bg-color;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 140px;
+
+    h2 {
+        @include secondary-font(3.4rem);
+        color: $accent-color;
+    }
+
+    p {
+        width: 85%;
+        margin: 0 auto;
+        padding-bottom: 40px;
+    }
+}

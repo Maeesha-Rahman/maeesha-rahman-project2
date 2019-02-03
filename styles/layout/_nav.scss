@@ -1,0 +1,29 @@
+.navigation {
+    text-transform: uppercase;
+    color: #fff;
+
+    &__menu {
+        display: flex;
+        justify-content: center;
+
+        li a {
+            padding: 30px 30px;
+            color: $accent-color-2;
+            @include secondary-font(1.9rem);
+            line-height: 29px; 
+            letter-spacing: 1.9px;
+        }
+
+        a:hover,
+        a:focus,
+        a:active,
+        a:focus-within {
+            color: $accent-color;
+        }
+
+        .logo {
+            text-transform: capitalize;
+            @include logo-heading(2.9rem);
+        }
+    }
+}

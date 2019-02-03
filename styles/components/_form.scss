@@ -1,0 +1,57 @@
+.blog__form {
+    margin-left: 18%;
+    font-size: 1.9rem;
+    padding-bottom: 100px;
+    form {
+        input {
+            background-color: $bg-color;
+            border: none;
+            color: $accent-color-2;
+            border-bottom: 1px solid $accent-color;
+        }
+
+        ::placeholder {
+            color: $accent-color-2;
+            @include primary-font(1.95rem);
+            line-height: 30px;
+            letter-spacing: 1.9px;
+        }
+
+        input[type=email] {
+            padding-left: 30px;
+            padding-right: 182.5px;
+            padding-bottom: 30px;
+            margin-left: 12.5px;
+        }
+
+        input[type=text] {
+            padding-left: 30px;
+            padding-right: 182.5px;
+            padding-bottom: 30px;
+            margin-right: 12.5px;
+        }
+
+        input[type=submit] {
+            width: 94.5%;
+            padding: 4px 0;
+            color: $accent-color-2;
+            border: none;
+            background-color: $accent-color-3;
+            text-transform: capitalize;
+            @include logo-heading(2rem);
+            &:hover {
+                background: $accent-color;
+            }
+        }
+
+        textarea {
+            color: $accent-color-2;
+            background: $bg-color;
+            border: 1px solid $accent-color;
+            margin: 40px 0;
+            padding-left: 30px;
+            resize: none;
+            padding-top: 40px;
+        }
+    }
+}

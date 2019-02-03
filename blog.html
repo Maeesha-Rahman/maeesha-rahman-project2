@@ -15,7 +15,7 @@
 <body>
     <a href="#maincontent" class="skip-link">Skip to main content.</a>
     <!-- HEADER STARTS -->
-    <header class="header">
+    <header class="header header--blog">
         <div class="wrapper">
             <!-- NAV STARTS -->
             <nav class="navigation">
@@ -28,19 +28,25 @@
                 </ul>
             </nav>
             <!-- NAV ENDS -->
-            <div class="header__content">
+            <div class="header__content--blog">
                 <h1>Blog</h1>
             </div>
         </div>
     </header>
     <!-- HEADER ENDS -->
     <!-- MAIN STARTS -->
-    <main id="maincontent">
+    <main class="main__blog" id="maincontent">
+        <!-- <div class="aside__image">
+            <img src="assets/sidebar-image.jpg" alt="">
+        </div> -->
         <aside class="aside__blog">
+            <div class="aside__image">
+                <img src="assets/sidebar-image.jpg" alt="">
+            </div>
             <div class="mission">
                 <h2>Our mission</h2>
                 <p>Nam dapibus nisi vita elit fringilla ratrum. Aenean sallicitudin, erat a elementum.</p>
-                <a class="button" href="#">Find out more</a>
+                <a href="#">Find out more.</a>
             </div>
             <div class="posts">
                 <h2>Recent Posts</h2>
@@ -68,31 +74,37 @@
             </section>
             <section class="blog__comments">
                 <h2>Comments:</h2>
-                <!-- comment 1 -->
-                <div class="blog__comments--image">
-                    <img src="assets/comment-image-1.jpg" alt="">
-                </div>
-                <div class="blog__comments--text">
-                    <h3>Tuesday October 9th, 2019 by Sulaire</h3>
-                    <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices Donec euismod scelerisque ligula. Maecenas eu varius risus..</p>
-                </div>
-                <!-- comment 2 -->
-                <div class="blog__comments--image">
-                    <img src="assets/comment-image-2.jpg" alt="">
-                </div>
-                <div class="blog__comments--text">
-                    <h3>Tuesday October 9th, 2019 by Sulaire</h3>
-                    <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices Donec euismod scelerisque ligula. Maecenas eu varius risus..</p>
+                <div class="comment__container">
+                    <!-- comment 1 -->
+                    <div class="comment__container--1">
+                        <div class="blog__comments--image">
+                            <img src="assets/comment-image-1.jpg" alt="">
+                        </div>
+                        <div class="blog__comments--text">
+                            <h3>Tuesday October 9th, 2019 by Sulaire</h3>
+                            <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices Donec euismod scelerisque ligula. Maecenas eu varius risus..</p>
+                        </div>
+                    </div>
+                    <!-- comment 2 -->
+                    <div class="comment__container--2">
+                        <div class="blog__comments--image">
+                            <img src="assets/comment-image-2.jpg" alt="">
+                        </div>
+                        <div class="blog__comments--text">
+                            <h3>Tuesday October 9th, 2019 by Sulaire</h3>
+                            <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices Donec euismod scelerisque ligula. Maecenas eu varius risus..</p>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section class="blog__form">
                 <form action="" method="POST" name="blog__form">
-                    <label for="email" class="visuallyHidden">Email address</label>
+                    <label for="email" class="visuallyhidden">Email address</label>
                     <input type="email" name="email" id="email" placeholder="Email address" required>
-                    <label for="name" class="visuallyHidden">Name</label>
+                    <label for="name" class="visuallyhidden">Name</label>
                     <input type="text" name="name" id="name" placeholder="Name" required>
-                    <textarea name="message" placeholder="Message" cols="50" rows="10"></textarea>
-                    <input type="submit" value="Submit">
+                    <textarea name="comment" placeholder="Comment" cols="50" rows="10"></textarea>
+                    <input type="submit" value="Post Comment">
                 </form>
             </section>
         </section>

@@ -71,3 +71,25 @@
         }
     }
 }
+
+/*media queries*/
+
+@media (max-width: 830px) {
+
+    .header {
+        &__box {
+            display: none;
+        }
+
+        &__content  {
+		    h1 {
+                min-width: 500px;
+                @include logo-heading(9rem);
+            }
+            .motto {
+                @include secondary-font(2.9rem);
+                margin-left: 22%;
+            }
+	    }
+    }
+}

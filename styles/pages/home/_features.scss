@@ -1,7 +1,7 @@
 .features {
     background-color: $bg-color;
-    padding-top: 270px;
-    padding-bottom: 60px;
+    padding-top: 280px;
+    padding-bottom: 140px;
     .wrapper {
         display: flex;
         flex-wrap: wrap;
@@ -29,11 +29,12 @@
         i { 
             background-color: $accent-color-3;
             border-radius: 50%;
-            width: 7vh;
+            width: 60px;
+            height: 60px;
             padding-top: 10px;
-            height: 7vh;
             text-align: center;
-            transform: translateY(-30%);   
+            line-height: 40px;
+            transform: translateY(-30%);  
         }
 
         i::before {
@@ -49,4 +50,25 @@
             margin: 0;
         }
     }
+}
+
+/*media queries*/
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+    .features {
+        .wrapper {
+            .feature {
+                width: 100%;
+            }
+        }
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
 }

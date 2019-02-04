@@ -38,11 +38,16 @@
 }
 
 /* Media Query */
-@media all and (max-width: 850px) {
+@media all and (max-width: 900px) {
 	.hamburger,
 	.exit-responsive {
 		display: block;
-		font-size: 25px;
+		font-size: 50px;
+		color: $accent-color-2;
+		margin: 0;
+		position: absolute;
+		right: 10px;
+		top: 10px;
 	}
 
 	.navigation {
@@ -52,20 +57,18 @@
 		left: 0;
 		right: 0;
 		bottom: 0;
-		background: rgba(0,0,0,0.99);
-		color: white;
-	}
+		background: $bg-color;
+		z-index: 1;
 
-	.navigation ul {
-		display: flex;
-		flex-direction: column;
-	}
+		ul {
+			display: flex;
+			flex-direction: column;
 
-	.navigation ul a {
-		font-size: 50px;
-		text-align: center;
-		width: 100%;
-		padding: 30px;
-	}
+			a {
+				text-align: center;
+				width: 100%;
+			}
+		}
 
+	}
 }

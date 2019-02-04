@@ -53,6 +53,11 @@
 }
 
 /*media queries*/
+@media (max-width: 1675px) {
+    .features {
+        padding-bottom: 50px;
+    }
+}
 
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {

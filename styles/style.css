@@ -509,8 +509,14 @@ p {
   width: 25%;
   margin-left: 5%;
   margin-top: 10%;
-  padding-top: 300px;
-  padding-left: 30px; }
+  padding-top: 400px;
+  padding-left: 40px;
+  padding-bottom: 30px;
+  padding-right: 40px; }
+
+.aside__image {
+  position: absolute;
+  top: 5%; }
 
 .mission h2 {
   font-size: 3.4rem;
@@ -550,13 +556,17 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #111010; }
+  background-color: #111010;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  position: relative; }
 
 .blog {
   width: 70%; }
   .blog__image {
     position: absolute;
-    top: 80%;
+    top: -8%;
     right: 0;
     -webkit-box-shadow: -46px 43px 0px -16px #ff8327;
     -moz-box-shadow: -46px 43px 0px -16px #ff8327;

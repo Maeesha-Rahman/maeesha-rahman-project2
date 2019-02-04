@@ -1,18 +1,16 @@
 .main__blog {
     display: flex;
     background-color: $bg-color;
+    align-items: flex-start;
+    position: relative;
 }
 
 .blog {
     width: 70%;
 
-    &__post {
-        
-    }
-
     &__image {
         position: absolute;
-        top: 80%;
+        top: -8%;
         right: 0;
         -webkit-box-shadow: -46px 43px 0px -16px rgba(255,131,39,1);
         -moz-box-shadow: -46px 43px 0px -16px rgba(255,131,39,1);

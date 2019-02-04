@@ -27,3 +27,45 @@
         }
     }
 }
+
+.hamburger,
+.exit-responsive {
+	display: none;
+}
+
+.show.navigation {
+	display: block;
+}
+
+/* Media Query */
+@media all and (max-width: 850px) {
+	.hamburger,
+	.exit-responsive {
+		display: block;
+		font-size: 25px;
+	}
+
+	.navigation {
+		display: none;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: rgba(0,0,0,0.99);
+		color: white;
+	}
+
+	.navigation ul {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.navigation ul a {
+		font-size: 50px;
+		text-align: center;
+		width: 100%;
+		padding: 30px;
+	}
+
+}

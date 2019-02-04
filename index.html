@@ -18,8 +18,10 @@
         </div>
         <div class="wrapper">
             <!-- NAV STARTS -->
+            <p class="hamburger"><i class="fas fa-bars"></i></p>
             <nav class="navigation">
                 <ul class="navigation__menu">
+                    <li class="exit-responsive"><i class="fas fa-times"></i></li>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#maincontent">About</a></li>
                     <li><a class="logo" href="index.html">Bar-one</a></li>
@@ -159,5 +161,25 @@
         <p>Copyright © 2019 HackerYou</p>
     </footer>
     <!-- FOOTER ENDS -->
+
+    <!-- Load in jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        // write a document ready
+        $(function () {
+            // write a function that listens to a click on the hamburger menu
+            $('.hamburger').on('click', function () {
+                // toggle class show on the menu
+                $('.navigation').toggleClass('show');
+                //can use addClass instead of toggleClass
+            });
+            // write a function that listens to a click on the exit icon
+            $('.exit-responsive').on('click', function () {
+                $('.navigation').toggleClass('show');
+                //can use removeClass instead
+            });
+        });
+    		// toggle class show on the menu
+    </script>
 </body>
 </html>

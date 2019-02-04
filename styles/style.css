@@ -477,40 +477,43 @@ p {
 
 /*media queries*/
 @media (max-width: 1675px) {
-  .details__top {
-    width: 90%;
-    margin: 0 auto;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
-    .details__top--image {
-      width: 100%;
-      -webkit-transform: none;
-      -ms-transform: none;
-      transform: none;
-      padding-bottom: 50px; }
-    .details__top--content {
-      width: 100%;
-      text-align: center;
-      padding: 0; }
-  .details__bottom {
-    width: 90%;
-    margin: 0 auto;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-    -ms-flex-direction: column-reverse;
-    flex-direction: column-reverse; }
-    .details__bottom--image {
-      width: 100%;
-      -webkit-transform: none;
-      -ms-transform: none;
-      transform: none;
-      padding-bottom: 50px; }
-    .details__bottom--content {
-      width: 100%;
-      text-align: center;
-      padding: 0; } }
+  .details {
+    padding-bottom: 150px; }
+    .details__top {
+      width: 80%;
+      margin: 0 auto;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      .details__top--image {
+        width: 100%;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+        padding-bottom: 80px; }
+      .details__top--content {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        padding-bottom: 50px; }
+    .details__bottom {
+      width: 80%;
+      margin: 0 auto;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+      flex-direction: column-reverse; }
+      .details__bottom--image {
+        width: 100%;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+        padding-bottom: 80px; }
+      .details__bottom--content {
+        width: 100%;
+        text-align: center;
+        padding: 0; } }
 
 /* Portrait tablet and small desktops */
 /* Landscape phone to portrait tablet */
@@ -537,14 +540,8 @@ p {
     margin: 0 auto;
     padding-bottom: 40px; }
 
-.banner {
-  background: url(../assets/banner-image.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 70vh;
-  background-size: 100% 100%;
-  margin: 0;
-  padding: 0; }
+.banner img {
+  width: 100%; }
 
 .events {
   background-color: #111010;
@@ -646,17 +643,16 @@ p {
 .blog {
   width: 70%; }
   .blog__image {
-    position: absolute;
-    top: -8%;
-    right: 0; }
+    margin-top: -15%;
+    margin-left: 196px; }
     .blog__image img {
       -webkit-box-shadow: -46px 43px 0px -16px #ff8327;
       -moz-box-shadow: -46px 43px 0px -16px #ff8327;
       box-shadow: -46px 43px 0px -16px #ff8327; }
   .blog__menu {
-    padding-top: 550px;
+    padding-top: 100px;
     padding-left: 100px;
-    margin-left: 14.25%;
+    margin-left: 170px;
     padding-bottom: 70px;
     padding-right: 100px;
     -webkit-box-shadow: -2px 2px 0px 2px #ff8327;
@@ -674,6 +670,9 @@ p {
       margin-top: 1%;
       font-size: 1.5rem; }
 
+/* Portrait tablet and small desktops */
+/* Landscape phone to portrait tablet */
+/* Landscape phones and down */
 .blog__comments {
   margin-left: 20%; }
   .blog__comments h2 {

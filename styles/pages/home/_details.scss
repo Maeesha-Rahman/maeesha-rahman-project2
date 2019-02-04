@@ -65,31 +65,33 @@
 
 @media (max-width: 1675px) {
     .details {
+        padding-bottom: 150px;
         &__top {
-            width: 90%;
+            width: 80%;
             margin: 0 auto;
             flex-wrap: wrap;
             &--image {
                 width: 100%;
                 transform: none;
-                padding-bottom: 50px;
+                padding-bottom: 80px;
             }
             &--content {
                 width: 100%;
                 text-align: center;
                 padding: 0;
+                padding-bottom: 50px;
             }
         }
 
         &__bottom {
-            width: 90%;
+            width: 80%;
             margin: 0 auto;
             flex-wrap: wrap;
             flex-direction: column-reverse;
             &--image {
                 width: 100%;
                 transform: none;
-                padding-bottom: 50px;
+                padding-bottom: 80px;
             }
             &--content {
                 width: 100%;

@@ -61,6 +61,43 @@
     }
 }
 
+@media (max-width: 1370px) {
+    // .main__blog {
+    //     display: flex;
+    //     // background-color: $bg-color;
+    //     // align-items: flex-start;
+    //     // position: relative;
+    // }
+
+    .main__blog {
+        // display: flex;
+        // background-color: $bg-color;
+        // align-items: flex-start;
+        // position: relative;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .blog {
+        width: 100%;
+        &__image {
+        // position: absolute;
+        margin-top: 0%;
+        // margin-left: 196px;
+        
+        // right: 0;
+        // -webkit-box-shadow: -46px 43px 0px -16px rgba(255,131,39,1);
+        // -moz-box-shadow: -46px 43px 0px -16px rgba(255,131,39,1);
+        // box-shadow: -46px 43px 0px -16px rgba(255,131,39,1);
+        // img {
+        //     -webkit-box-shadow: -46px 43px 0px -16px rgba(255,131,39,1);
+        //     -moz-box-shadow: -46px 43px 0px -16px rgba(255,131,39,1);
+        //     box-shadow: -46px 43px 0px -16px rgba(255,131,39,1);
+        // }
+        }
+    }
+}
+
 
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {

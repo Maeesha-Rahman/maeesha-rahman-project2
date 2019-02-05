@@ -57,3 +57,56 @@
         }
     }
 }
+
+// media queries
+
+@media (max-width: 1600px) {
+    .mission {
+        h2 {
+            margin-top: 10%;
+        }
+    }
+}
+
+@media (max-width: 1500px) {
+    .mission {
+        h2 {
+            margin-top: 15%;
+        }
+    }
+    .aside__blog {
+    padding-right: 30px;
+    }
+
+}
+
+@media (max-width: 1370px) {
+    // .main__blog {
+    //     display: flex;
+    //     // background-color: $bg-color;
+    //     // align-items: flex-start;
+    //     // position: relative;
+    // }
+    .aside__blog {
+        width: 100%;
+        .aside__image {
+    position: none;
+    // top: 5%;
+    }
+
+    
+}
+
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+}

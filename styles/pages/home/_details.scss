@@ -13,8 +13,10 @@
 
         &--image {
             width: 40%;
-            transform: translateY(-50%);
+            // transform: translateY(-50%);
+            // margin-top: -13%;
             img {
+                margin-top: -32%;
                 -webkit-box-shadow: 46px 43px 0px -16px rgba(255,131,39,1);
                 -moz-box-shadow: 46px 43px 0px -16px rgba(255,131,39,1);
                 box-shadow: 46px 43px 0px -16px rgba(255,131,39,1);
@@ -39,8 +41,9 @@
 
         &--image {
             width: 40%;
-            transform: translateY(12%);
+            // margin-top: 15%;
             img {
+                margin-top: 30%;
             -webkit-box-shadow: -46px 43px 0px -16px rgba(255,131,39,1);
             -moz-box-shadow: -46px 43px 0px -16px rgba(255,131,39,1);
             box-shadow: -46px 43px 0px -16px rgba(255,131,39,1);

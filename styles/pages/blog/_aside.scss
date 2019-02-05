@@ -10,8 +10,19 @@
 }
 
 .aside__image {
-    position: absolute;
-    top: 5%;
+    // position: absolute;
+    // top: 5%;
+    img {
+    margin-left: -36%;
+    z-index: 1;
+    width: 455px;
+    height: 432px;
+    margin-top: -130%;
+    }
+    // margin-left: 0%;
+    // z-index: 1;
+    
+    // margin-top: -120%;
 }
 
 .mission {
@@ -75,28 +86,46 @@
         }
     }
     .aside__blog {
-    padding-right: 30px;
+        padding-right: 30px;
     }
 
 }
 
 @media (max-width: 1370px) {
-    // .main__blog {
-    //     display: flex;
-    //     // background-color: $bg-color;
-    //     // align-items: flex-start;
-    //     // position: relative;
-    // }
     .aside__blog {
         width: 100%;
+        margin: 0px;
+        padding: 50px 0px;
+        text-align: center;
         .aside__image {
-    position: none;
-    // top: 5%;
+            img {
+                margin: 0 auto;
+                border: 5px solid $accent-color;
+            }
+        }
     }
 
-    
-}
+    .mission {
+        h2 {
+            margin-top: 5%;
+            margin-bottom: 2%;
+        }
+    }
 
+    .posts {
+        h2 {
+            margin-top: 4%;
+            margin-bottom: 2%;
+        }
+
+        &__links {
+            li {
+                margin-left: 40%;
+                text-align: left;
+                list-style-position: inside;
+            }
+        }
+    }
 }
 
 /* Portrait tablet and small desktops */
@@ -105,8 +134,53 @@
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
+    .posts {
+        &__links {
+            li {
+                margin-left: 30%;
+            }
+        }
+    }
 }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
+    .aside__blog {
+        p {
+            @include primary-font(1rem);
+        }
+        .aside__image {
+            img {
+                width: 200px;
+                height: 190px;
+            }
+        }
+
+        .mission {
+            h2 {
+                @include secondary-font(2.5rem);
+            }
+            p {
+                width: 80%;
+                margin: 0 auto;
+            }
+            a {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    .posts {
+        h2 {
+            @include secondary-font(2.5rem);
+        }
+        &__links {
+            li {
+                margin-left: 25%;
+            }
+            a {
+                @include primary-font(1.2rem);
+            }
+        }
+    }
 }

@@ -6,7 +6,6 @@
     }
 
     img {
-        // width: 200%;
         width: 100px;
         height: 100px;
     }
@@ -27,9 +26,6 @@
 }
 
 .comment__container {
-    // display: flex;
-    // width: 100%;
-    // flex-wrap: wrap;
     margin-right: 10%;
     &--1 {
         display: flex;  
@@ -44,6 +40,41 @@
 
         .blog__comments--text {
             padding-bottom: 40px;
+        }
+    }
+}
+
+// media queries
+
+@media (max-width: 1370px) {
+    .blog__comments {
+        margin-left: 10%;
+    }
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    .blog__comments {
+        h2 {
+            @include secondary-font(2.5rem);
+        }
+        &--text {
+            p {
+                @include primary-font(1.2rem);
+            }
+        }
+        &--text {
+            h3 {
+                font-size: 1.5rem;
+            }
         }
     }
 }

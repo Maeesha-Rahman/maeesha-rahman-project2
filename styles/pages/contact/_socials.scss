@@ -38,3 +38,27 @@
     }
 }
 
+// media queries
+
+@media (max-width: 1140px) {
+    .main__contact {
+        flex-direction: column;
+    }
+
+    .aside__contact {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        align-items: center;
+        padding: 0;
+        padding-bottom: 300px;
+        padding-top: 50px;
+
+        &--social {
+            li a {
+                padding: 30px;
+            }
+        }
+    }
+}

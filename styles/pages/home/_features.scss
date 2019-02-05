@@ -6,14 +6,11 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        // align-content: space-between;
-        // justify-content: space-between;
 
         .feature {
             width: calc(100% / 2);
             display: flex;
             flex-direction: row;
-            // justify-content: space-between;
         }
 
         .feature__text {
@@ -53,8 +50,15 @@
 }
 
 /*media queries*/
-@media (max-width: 1675px) {
+@media (max-width: 1920px) {
     .features {
+        padding-top: 330px;
+    }
+}
+
+@media (max-width: 1690px) {
+    .features {
+        padding-top: 300px;
         padding-bottom: 50px;
     }
 }
@@ -67,6 +71,12 @@
                 width: 100%;
             }
         }
+    }
+}
+
+@media (max-width: 830px) {
+    .features {
+        padding-top: 80px;
     }
 }
 

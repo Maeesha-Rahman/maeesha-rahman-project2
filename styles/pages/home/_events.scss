@@ -25,3 +25,44 @@
         }
     }
 }
+
+// media queries
+
+@media (max-width: 1000px) {
+    .events {
+        .wrapper {
+            flex-direction: column;
+        }
+
+        &__image {
+            margin: 0 auto;
+            width: 50%;
+        }
+
+        &__content {
+            margin: 0 auto;
+            padding-top: 70px;
+            width: 100%;
+            text-align: center;
+            h2 {
+                text-align: center;
+            }
+
+            p {
+                text-align: left;
+            }
+        }
+    }
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+}

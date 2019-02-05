@@ -19,3 +19,28 @@
         margin-right: 0;
     }
 }
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    .gallery {
+        &__item {
+            width: 50%;
+        }
+
+        &__item:nth-last-of-type(2) {
+            margin-right: 0;
+        }
+
+        &__item:last-child {
+            display: none;
+        }
+    }
+}

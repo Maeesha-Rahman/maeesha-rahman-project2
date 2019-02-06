@@ -248,7 +248,8 @@ p {
     right: 0;
     bottom: 0;
     background: #111010;
-    z-index: 1; }
+    z-index: 1;
+    padding-top: 100px; }
     .navigation ul {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -323,6 +324,30 @@ p {
       left: 14%; }
 
 /*media queries*/
+@media (max-width: 1370px) {
+  .header--blog {
+    min-height: 60vh; }
+  .header__content--blog {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center; } }
+
+@media (max-width: 1140px) {
+  .header--contact {
+    min-height: 60vh; }
+  .header__content--contact {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center; } }
+
 @media (max-width: 830px) {
   .header__box {
     display: none; }
@@ -337,12 +362,18 @@ p {
     font-weight: 700;
     margin-left: 22%; } }
 
+@media (max-width: 740px) {
+  .header__content--contact h1 {
+    line-height: 0.5;
+    font-size: 5.8rem; } }
+
 /* Portrait tablet and small desktops */
 /* Landscape phone to portrait tablet */
 /* Landscape phones and down */
 @media (max-width: 460px) {
-  .header__content--contact {
-    line-height: 1; } }
+  .header__content--contact h1 {
+    line-height: 0.5;
+    font-size: 5rem; } }
 
 .footer {
   background-color: #2c2c2c;
@@ -428,6 +459,10 @@ p {
     padding-top: 300px;
     padding-bottom: 50px; } }
 
+@media (max-width: 1024px) {
+  .features {
+    padding-top: 350px; } }
+
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
   .features .wrapper .feature {
@@ -435,7 +470,8 @@ p {
 
 @media (max-width: 830px) {
   .features {
-    padding-top: 80px; } }
+    padding-top: 80px;
+    padding-bottom: 0px; } }
 
 /* Landscape phone to portrait tablet */
 /* Landscape phones and down */
@@ -535,6 +571,11 @@ p {
         padding: 0; } }
 
 /* Portrait tablet and small desktops */
+@media (max-width: 845px) {
+  .details {
+    padding-top: 40px;
+    padding-bottom: 40px; } }
+
 /* Landscape phone to portrait tablet */
 /* Landscape phones and down */
 .host {
@@ -559,6 +600,18 @@ p {
     margin: 0 auto;
     padding-bottom: 40px; }
 
+@media (max-width: 1675px) {
+  .host {
+    padding-top: 100px; } }
+
+/* Portrait tablet and small desktops */
+@media (max-width: 845px) {
+  .host {
+    padding-top: 0px;
+    padding-bottom: 40px; } }
+
+/* Landscape phone to portrait tablet */
+/* Landscape phones and down */
 .banner img {
   width: 100%; }
 
@@ -606,6 +659,11 @@ p {
       text-align: left; } }
 
 /* Portrait tablet and small desktops */
+@media (max-width: 845px) {
+  .events {
+    padding-top: 40px;
+    padding-bottom: 40px; } }
+
 /* Landscape phone to portrait tablet */
 /* Landscape phones and down */
 .gallery {
@@ -884,7 +942,8 @@ p {
   .blog__comments h2 {
     font-size: 2.5rem;
     font-family: 'Chathura', sans-serif;
-    font-weight: 700; }
+    font-weight: 700;
+    text-align: center; }
   .blog__comments--text p {
     font-size: 1.2rem;
     font-family: 'Chathura', sans-serif;

@@ -38,9 +38,6 @@
     <!-- HEADER ENDS -->
     <!-- MAIN STARTS -->
     <main class="main__blog" id="maincontent">
-        <!-- <div class="aside__image">
-            <img src="assets/sidebar-image.jpg" alt="Photo showing a hand holding a beer glass while using a beer tap to fill up the glass with beer.">
-        </div> -->
         <aside class="aside__blog">
             <div class="aside__image">
                 <img src="assets/sidebar-image.jpg" alt="Photo showing a hand holding a beer glass while using a beer tap to fill up the glass with beer.">
@@ -121,21 +118,15 @@
     <!-- Load in jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>
-        // write a document ready
         $(function () {
-            // write a function that listens to a click on the hamburger menu
             $('.hamburger').on('click', function () {
-                // toggle class show on the menu
                 $('.navigation').toggleClass('show');
-                //can use addClass instead of toggleClass
             });
-            // write a function that listens to a click on the exit icon
+
             $('.exit-responsive').on('click', function () {
                 $('.navigation').toggleClass('show');
-                //can use removeClass instead
             });
         });
-                // toggle class show on the menu
     </script>
 </body>
 </html>

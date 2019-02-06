@@ -17,3 +17,31 @@
         padding-bottom: 40px;
     }
 }
+
+// media queries
+
+@media (max-width: 1675px) {
+    .host {
+        padding-top: 100px;
+    }
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+ 
+}
+
+@media (max-width: 845px) {
+    .host {
+        padding-top: 0px;
+        padding-bottom: 40px;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+}

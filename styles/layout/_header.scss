@@ -74,6 +74,37 @@
 
 /*media queries*/
 
+
+@media (max-width: 1370px) {
+    .header {
+        &--blog {
+            min-height: 60vh;
+        }
+        &__content--blog {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 1140px) {
+    .header {
+        &--contact {
+            min-height: 60vh;
+        }
+        &__content--contact {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+    }
+}
+
 @media (max-width: 830px) {
 
     .header {
@@ -94,9 +125,20 @@
     }
 }
 
-/* Portrait tablet and small desktops */
-@media (max-width: 940px) {
+@media (max-width: 740px) {
+    .header {
+        &__content--contact {
+            h1 {
+                line-height: 0.5;
+                font-size: 5.8rem;
+            }
+        }
+    }
 }
+
+
+/* Portrait tablet and small desktops */
+
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
@@ -109,8 +151,9 @@
 @media (max-width: 460px) {
     .header {
         &__content {
-            &--contact {
-                line-height: 1;
+            &--contact h1 {
+                line-height: 0.5;
+                font-size: 5rem;
             }
         }
     }

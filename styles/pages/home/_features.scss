@@ -63,6 +63,12 @@
     }
 }
 
+@media (max-width: 1024px) {
+    .features {
+        padding-top: 350px;
+    }
+}
+
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
     .features {
@@ -77,6 +83,7 @@
 @media (max-width: 830px) {
     .features {
         padding-top: 80px;
+        padding-bottom: 0px;
     }
 }
 

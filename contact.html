@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <a href="#maincontent" class="skip-link">Skip to main content.</a>
+    <a href="#main__content" class="skip__link">Skip to main content.</a>
     <!-- HEADER STARTS -->
     <header class="header header--contact">
         <div class="wrapper">
@@ -21,7 +21,7 @@
             <p class="hamburger"><i class="fas fa-bars"></i></p>
             <nav class="navigation">
                 <ul class="navigation__menu">
-                    <li class="exit-responsive"><i class="fas fa-times"></i></li>
+                    <li class="exit"><i class="fas fa-times"></i></li>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="index.html#about">About</a></li>
                     <li><a class="logo" href="index.html">Bar-One</a></li>
@@ -37,28 +37,28 @@
     </header>
     <!-- HEADER ENDS -->
     <!-- MAIN STARTS -->
-    <main class="main__contact" id="maincontent">
+    <main class="main__contact" id="main__content">
     <aside class="aside__contact">
         <div class="aside__contact--social">
             <ul>
                 <li><a href="http://facebook.com">
                         <i class="fab fa-facebook-f"></i>
-                        <span class="visuallyhidden">Facebook</span>
+                        <span class="visually__hidden">Facebook</span>
                     </a>
                 </li>
                 <li><a href="http://instagram.com">
                         <i class="fab fa-instagram"></i>
-                        <span class="visuallyhidden">Instagram</span>
+                        <span class="visually__hidden">Instagram</span>
                     </a>
                 </li>
                 <li><a href="http://twitter.com">
                         <i class="fab fa-twitter"></i>
-                        <span class="visuallyhidden">Twitter</span>
+                        <span class="visually__hidden">Twitter</span>
                     </a>
                 </li>
                 <li><a href="http://whatsapp.com">
                         <i class="fab fa-whatsapp"></i>
-                        <span class="visuallyhidden">Whatsapp</span>
+                        <span class="visually__hidden">Whatsapp</span>
                     </a>
                 </li>
             </ul>
@@ -73,9 +73,9 @@
     </aside>
     <section class="contact__form">
         <form class="clearfix" action="" method="POST" name="contact__form"></form>
-            <label for="name" class="visuallyhidden">Name</label>
+            <label for="name" class="visually__hidden">Name</label>
             <input type="text" name="name" id="name" placeholder="Name" required>
-            <label for="email" class="visuallyhidden">Email address</label>
+            <label for="email" class="visually__hidden">Email address</label>
             <input type="email" name="email" id="email" placeholder="Email address" required>
             <textarea name="message" placeholder="Message" cols="97" rows="5"></textarea>
             <input type="submit" value="Submit">
@@ -96,7 +96,7 @@
                 $('.navigation').toggleClass('show');
             });
 
-            $('.exit-responsive').on('click', function () {
+            $('.exit').on('click', function () {
                 $('.navigation').toggleClass('show');
             });
         });

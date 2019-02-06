@@ -39,12 +39,10 @@
             letter-spacing: 2.4px;
             color: $accent-color;
             text-transform: capitalize;
-            // display: inline-block;
         }
 
         .motto {
             letter-spacing: 2.6px;
-            // line-height: 94.7px;
             line-height: 2.4;
             color: $accent-color-2;
             @include secondary-font(4.16rem);
@@ -134,18 +132,6 @@
             }
         }
     }
-}
-
-
-/* Portrait tablet and small desktops */
-
-
-/* Landscape phone to portrait tablet */
-@media (max-width: 768px) {
-}
-
-/* Landscape phones and down */
-@media (max-width: 480px) {
 }
 
 @media (max-width: 460px) {

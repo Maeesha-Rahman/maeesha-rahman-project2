@@ -4,7 +4,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-.visuallyhidden:not(:focus):not(:active) {
+.visually__hidden:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -17,7 +17,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
   overflow: hidden;
 }
 
-.skip-link {
+.skip__link {
     position: absolute;
     left: -1000px;
     top: 5px;
@@ -26,7 +26,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
     color: white;
 }
 
-.skip-link:focus {
+.skip__link:focus {
     left: 0;
 }
 
@@ -45,6 +45,11 @@ body {
 a {
     text-decoration: none;
     display: inline-block;
+
+    &:focus {
+        box-shadow: 0 1rem 2rem rgba(255,131,39, .4);
+        border-bottom: 3px solid #ff8327;
+	}
 }
 
 li {

@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <a href="#maincontent" class="skip-link">Skip to main content.</a>
+    <a href="#main__content" class="skip__link">Skip to main content.</a>
     <!-- HEADER STARTS -->
     <header class="header header--blog">
         <div class="wrapper">
@@ -21,7 +21,7 @@
             <p class="hamburger"><i class="fas fa-bars"></i></p>
             <nav class="navigation">
                 <ul class="navigation__menu">
-                    <li class="exit-responsive"><i class="fas fa-times"></i></li>
+                    <li class="exit"><i class="fas fa-times"></i></li>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="index.html#about">About</a></li>
                     <li><a class="logo" href="index.html">Bar-One</a></li>
@@ -37,7 +37,7 @@
     </header>
     <!-- HEADER ENDS -->
     <!-- MAIN STARTS -->
-    <main class="main__blog" id="maincontent">
+    <main class="main__blog" id="main__content">
         <aside class="aside__blog">
             <div class="aside__image">
                 <img src="assets/sidebar-image.jpg" alt="Photo showing a hand holding a beer glass while using a beer tap to fill up the glass with beer.">
@@ -60,7 +60,7 @@
         <section class="blog">
             <section class="blog__post">
                 <div class="blog__image">
-                    <img src="assets/post-image.jpg" alt="">
+                    <img src="assets/post-image.jpg" alt="A counter containing various plates of appetizers.">
                 </div>
                 <article class="blog__menu">
                     <h2>New menu!</h2>
@@ -77,7 +77,7 @@
                     <!-- comment 1 -->
                     <div class="comment__container--1">
                         <div class="blog__comments--image">
-                            <img src="assets/comment-image-1.jpg" alt="">
+                            <img src="assets/comment-image-1.jpg" alt="Close up side-view portrait image of a woman wearing a white tank top.">
                         </div>
                         <div class="blog__comments--text">
                             <h3>Tuesday October 9th, 2019 by Sulaire</h3>
@@ -87,7 +87,7 @@
                     <!-- comment 2 -->
                     <div class="comment__container--2">
                         <div class="blog__comments--image">
-                            <img src="assets/comment-image-2.jpg" alt="">
+                            <img src="assets/comment-image-2.jpg" alt="Portrait side-view close up of a bearded man who is touching his dark hair.">
                         </div>
                         <div class="blog__comments--text">
                             <h3>Wednesday October 10th, 2019 by Renzo</h3>
@@ -98,9 +98,9 @@
             </section>
             <section class="blog__form">
                 <form action="" method="POST" name="blog__form">
-                    <label for="name" class="visuallyhidden">Name</label>
+                    <label for="name" class="visually__hidden">Name</label>
                     <input type="text" name="name" id="name" placeholder="Name" required>
-                    <label for="email" class="visuallyhidden">Email address</label>
+                    <label for="email" class="visually__hidden">Email address</label>
                     <input type="email" name="email" id="email" placeholder="Email address" required>
                     <textarea name="comment" placeholder="Comment" cols="97" rows="5"></textarea>
                     <input type="submit" value="Post comment">
@@ -123,7 +123,7 @@
                 $('.navigation').toggleClass('show');
             });
 
-            $('.exit-responsive').on('click', function () {
+            $('.exit').on('click', function () {
                 $('.navigation').toggleClass('show');
             });
         });

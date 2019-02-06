@@ -10,19 +10,13 @@
 }
 
 .aside__image {
-    // position: absolute;
-    // top: 5%;
     img {
-    margin-left: -36%;
-    z-index: 1;
-    width: 455px;
-    height: 432px;
-    margin-top: -130%;
+        margin-left: -36%;
+        z-index: 1;
+        width: 455px;
+        height: 432px;
+        margin-top: -130%;
     }
-    // margin-left: 0%;
-    // z-index: 1;
-    
-    // margin-top: -120%;
 }
 
 .mission {
@@ -128,11 +122,6 @@
     }
 }
 
-/* Portrait tablet and small desktops */
-@media (max-width: 940px) {
-}
-
-/* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
     .posts {
         &__links {
@@ -143,7 +132,6 @@
     }
 }
 
-/* Landscape phones and down */
 @media (max-width: 480px) {
     .aside__blog {
         p {

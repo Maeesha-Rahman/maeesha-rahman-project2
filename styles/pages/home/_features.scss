@@ -42,7 +42,6 @@
     &__text {
         margin-left: 3%;
         h2 {
-            // display: block;
             @include secondary-font(3.4rem);
             margin: 0;
         }
@@ -69,7 +68,6 @@
     }
 }
 
-/* Portrait tablet and small desktops */
 @media (max-width: 940px) {
     .features {
         .wrapper {
@@ -87,10 +85,25 @@
     }
 }
 
-/* Landscape phone to portrait tablet */
-@media (max-width: 768px) {
-}
+@media (max-width: 500px) {
+    .feature {
+        h2 {
+            @include secondary-font(2.5rem);
+        }
+        p {
+            font-size: 1rem;
+        }
+        &__icon {
+            i { 
+                width: 40px;
+                height: 40px;
+                line-height: 20px;
+                transform: translateY(-15%); 
+            }
 
-/* Landscape phones and down */
-@media (max-width: 480px) {
+            i::before {
+                font-size: 1rem;
+            }
+        }
+    }
 }

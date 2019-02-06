@@ -44,14 +44,6 @@
     }
 }
 
-@media (max-width: 2000px) {
-    .blog {
-        &__menu {
-            // margin-left: 10%;
-        }
-    }
-}
-
 @media (max-width: 1370px) {
     .main__blog {
         flex-direction: column;
@@ -79,11 +71,6 @@
     }
 }
 
-
-/* Portrait tablet and small desktops */
-@media (max-width: 940px) {
-}
-
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
     .blog {
@@ -106,19 +93,16 @@
 @media (max-width: 480px) {
     .blog {
         &__post {
-            .blog__menu {
-                h2 {
-                    @include secondary-font(2.5rem);
-                    // margin: 0;
-                    // margin-top: 5%;
-                }
-                h3 {
-                    font-size: 1rem;
-                }
-                p {
-                    @include primary-font(1.2rem);
-                }
+            h2 {
+                @include secondary-font(2.5rem);
             }
+            h3 {
+                font-size: 1rem;
+            }
+            p {
+                @include primary-font(1.2rem);
+            }
+            
         }
     }
 }

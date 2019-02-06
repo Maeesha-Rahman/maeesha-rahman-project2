@@ -132,7 +132,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-.visuallyhidden:not(:focus):not(:active) {
+.visually__hidden:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -145,7 +145,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   clip: rect(0 0 0 0);
   overflow: hidden; }
 
-.skip-link {
+.skip__link {
   position: absolute;
   left: -1000px;
   top: 5px;
@@ -153,7 +153,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   background: black;
   color: white; }
 
-.skip-link:focus {
+.skip__link:focus {
   left: 0; }
 
 html {
@@ -169,6 +169,10 @@ body {
 a {
   text-decoration: none;
   display: inline-block; }
+  a:focus {
+    -webkit-box-shadow: 0 1rem 2rem rgba(255, 131, 39, 0.4);
+    box-shadow: 0 1rem 2rem rgba(255, 131, 39, 0.4);
+    border-bottom: 3px solid #ff8327; }
 
 li {
   list-style-type: none; }
@@ -223,7 +227,7 @@ p {
       font-weight: 400; }
 
 .hamburger,
-.exit-responsive {
+.exit {
   display: none; }
 
 .show.navigation {
@@ -232,7 +236,7 @@ p {
 /* Media Query */
 @media all and (max-width: 900px) {
   .hamburger,
-  .exit-responsive {
+  .exit {
     display: block;
     font-size: 50px;
     color: #ffffff;
@@ -367,9 +371,6 @@ p {
     line-height: 0.5;
     font-size: 5.8rem; } }
 
-/* Portrait tablet and small desktops */
-/* Landscape phone to portrait tablet */
-/* Landscape phones and down */
 @media (max-width: 460px) {
   .header__content--contact h1 {
     line-height: 0.5;
@@ -392,6 +393,13 @@ p {
   font-weight: 400; }
   .button:hover {
     background: #ff8327; }
+
+@media (max-width: 480px) {
+  .button {
+    padding: 5px 20px;
+    font-size: 1rem;
+    font-family: 'Tulpen One', cursive;
+    font-weight: 400; } }
 
 .features {
   background-color: #111010;
@@ -463,7 +471,6 @@ p {
   .features {
     padding-top: 350px; } }
 
-/* Portrait tablet and small desktops */
 @media (max-width: 940px) {
   .features .wrapper .feature {
     width: 100%; } }
@@ -473,8 +480,23 @@ p {
     padding-top: 80px;
     padding-bottom: 0px; } }
 
-/* Landscape phone to portrait tablet */
-/* Landscape phones and down */
+@media (max-width: 500px) {
+  .feature h2 {
+    font-size: 2.5rem;
+    font-family: 'Chathura', sans-serif;
+    font-weight: 700; }
+  .feature p {
+    font-size: 1rem; }
+  .feature__icon i {
+    width: 40px;
+    height: 40px;
+    line-height: 20px;
+    -webkit-transform: translateY(-15%);
+    -ms-transform: translateY(-15%);
+    transform: translateY(-15%); }
+  .feature__icon i::before {
+    font-size: 1rem; } }
+
 .details {
   background-color: #220303;
   padding-top: 150px;
@@ -570,14 +592,29 @@ p {
         text-align: center;
         padding: 0; } }
 
-/* Portrait tablet and small desktops */
 @media (max-width: 845px) {
   .details {
     padding-top: 40px;
     padding-bottom: 40px; } }
 
-/* Landscape phone to portrait tablet */
-/* Landscape phones and down */
+@media (max-width: 590px) {
+  .details img {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 5px solid #ff8327; } }
+
+@media (max-width: 500px) {
+  .details h2 {
+    font-size: 2.5rem;
+    font-family: 'Chathura', sans-serif;
+    font-weight: 700; }
+  .details p {
+    font-size: 1rem; }
+  .details__bottom--image {
+    padding-bottom: 20px; }
+  .details__top--image {
+    padding-bottom: 20px; } }
+
 .host {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -604,14 +641,19 @@ p {
   .host {
     padding-top: 100px; } }
 
-/* Portrait tablet and small desktops */
 @media (max-width: 845px) {
   .host {
     padding-top: 0px;
     padding-bottom: 40px; } }
 
-/* Landscape phone to portrait tablet */
-/* Landscape phones and down */
+@media (max-width: 500px) {
+  .host h2 {
+    font-size: 2.5rem;
+    font-family: 'Chathura', sans-serif;
+    font-weight: 700; }
+  .host p {
+    font-size: 1rem; } }
+
 .banner img {
   width: 100%; }
 
@@ -658,14 +700,27 @@ p {
     .events__content p {
       text-align: left; } }
 
-/* Portrait tablet and small desktops */
 @media (max-width: 845px) {
   .events {
     padding-top: 40px;
     padding-bottom: 40px; } }
 
-/* Landscape phone to portrait tablet */
-/* Landscape phones and down */
+@media (max-width: 590px) {
+  .events img {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 5px solid #ff8327; } }
+
+@media (max-width: 500px) {
+  .events h2 {
+    font-size: 2.5rem;
+    font-family: 'Chathura', sans-serif;
+    font-weight: 700; }
+  .events p {
+    font-size: 1rem; }
+  .events__content {
+    padding-top: 20px; } }
+
 .gallery {
   background-color: #220303;
   padding: 100px 0px; }
@@ -681,16 +736,15 @@ p {
   .gallery__item:last-child {
     margin-right: 0; }
 
-/* Portrait tablet and small desktops */
-/* Landscape phone to portrait tablet */
-/* Landscape phones and down */
 @media (max-width: 480px) {
-  .gallery__item {
-    width: 50%; }
-  .gallery__item:nth-last-of-type(2) {
-    margin-right: 0; }
-  .gallery__item:last-child {
-    display: none; } }
+  .gallery {
+    padding: 30px 0; }
+    .gallery__item {
+      width: 50%; }
+    .gallery__item:nth-last-of-type(2) {
+      margin-right: 0; }
+    .gallery__item:last-child {
+      display: none; } }
 
 .aside__blog {
   background-color: #220303;
@@ -773,13 +827,10 @@ p {
     text-align: left;
     list-style-position: inside; } }
 
-/* Portrait tablet and small desktops */
-/* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
   .posts__links li {
     margin-left: 30%; } }
 
-/* Landscape phones and down */
 @media (max-width: 480px) {
   .aside__blog p {
     font-size: 1rem;
@@ -871,7 +922,6 @@ p {
     .blog__menu {
       margin-left: 0px; } }
 
-/* Portrait tablet and small desktops */
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
   .blog__menu {
@@ -884,13 +934,13 @@ p {
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
-  .blog__post .blog__menu h2 {
+  .blog__post h2 {
     font-size: 2.5rem;
     font-family: 'Chathura', sans-serif;
     font-weight: 700; }
-  .blog__post .blog__menu h3 {
+  .blog__post h3 {
     font-size: 1rem; }
-  .blog__post .blog__menu p {
+  .blog__post p {
     font-size: 1.2rem;
     font-family: 'Chathura', sans-serif;
     font-weight: 400; } }
@@ -933,9 +983,6 @@ p {
   .blog__comments {
     margin-left: 10%; } }
 
-/* Portrait tablet and small desktops */
-/* Landscape phone to portrait tablet */
-/* Landscape phones and down */
 @media (max-width: 480px) {
   .blog__comments img {
     margin: 0 auto; }
@@ -1161,9 +1208,6 @@ p {
     width: 100%;
     margin: 0; } }
 
-/* Portrait tablet and small desktops */
-/* Landscape phone to portrait tablet */
-/* Landscape phones and down */
 @media (max-width: 480px) {
   .contact__form {
     -webkit-box-shadow: 13px 14px 0px -6px #ff8327;

@@ -29,7 +29,7 @@
 }
 
 .hamburger,
-.exit-responsive {
+.exit {
 	display: none;
 }
 
@@ -40,7 +40,7 @@
 /* Media Query */
 @media all and (max-width: 900px) {
 	.hamburger,
-	.exit-responsive {
+	.exit {
 		display: block;
 		font-size: 50px;
 		color: $accent-color-2;

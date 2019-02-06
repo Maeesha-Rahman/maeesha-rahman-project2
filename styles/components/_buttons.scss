@@ -9,3 +9,12 @@
         background: $accent-color;
     }
 }
+
+// media queries
+
+@media (max-width: 480px) {
+    .button {
+        padding: 5px 20px;
+        @include logo-heading(1rem);
+    }
+}

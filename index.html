@@ -10,7 +10,7 @@
     <title>Bar One | Home</title>
 </head>
 <body>
-    <a href="#maincontent" class="skip-link">Skip to main content.</a>
+    <a href="#main__content" class="skip__link">Skip to main content.</a>
     <!-- HEADER STARTS -->
     <header class="header">
         <div class="header__box">
@@ -21,7 +21,7 @@
             <p class="hamburger"><i class="fas fa-bars"></i></p>
             <nav class="navigation">
                 <ul class="navigation__menu">
-                    <li class="exit-responsive"><i class="fas fa-times"></i></li>
+                    <li class="exit"><i class="fas fa-times"></i></li>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a class="logo" href="index.html">Bar-One</a></li>
@@ -37,7 +37,7 @@
     </header>
     <!-- HEADER ENDS -->
     <!-- MAIN STARTS -->
-    <main id="maincontent">
+    <main id="main__content">
         <!-- FEATURES SECTION STARTS -->
         <section class="features" id="about">
             <div class="wrapper">
@@ -108,7 +108,7 @@
             </div>
         </section>
         <!-- SECTION DETAILS ENDS -->
-        <!-- SECTION BEACHSTAYS BEGINS -->
+        <!-- SECTION HOST BEGINS -->
         <section class="host">
             <div class="wrapper">
                 <h2>Want to host a party?</h2>
@@ -116,12 +116,12 @@
                 <a class="button" href="#">Find out more</a>
             </div>
         </section>
-        <!-- SECTION BEACHSTAYS ENDS -->
-        <!-- SECTION BEER IMAGE STARTS -->
+        <!-- SECTION HOST ENDS -->
+        <!-- SECTION BEER BANNER STARTS -->
         <section class="banner">
             <img src="assets/banner-image.jpg" alt="Image of beer in a beer glass placed on a counter with blurred background.">
         </section>
-        <!-- SECTION BEER IMAGE ENDS -->
+        <!-- SECTION BEER BANNER ENDS -->
         <!-- SECTION EVENTS STARTS -->
             <section class="events">
                 <div class="wrapper">
@@ -162,24 +162,16 @@
     </footer>
     <!-- FOOTER ENDS -->
 
-    <!-- Load in jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>
-        // write a document ready
         $(function () {
-            // write a function that listens to a click on the hamburger menu
             $('.hamburger').on('click', function () {
-                // toggle class show on the menu
                 $('.navigation').toggleClass('show');
-                //can use addClass instead of toggleClass
             });
-            // write a function that listens to a click on the exit icon
-            $('.exit-responsive').on('click', function () {
+            $('.exit').on('click', function () {
                 $('.navigation').toggleClass('show');
-                //can use removeClass instead
             });
         });
-    		// toggle class show on the menu
     </script>
 </body>
 </html>

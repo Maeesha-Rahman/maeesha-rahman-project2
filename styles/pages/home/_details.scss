@@ -109,10 +109,6 @@
     }
 }
 
-/* Portrait tablet and small desktops */
-@media (max-width: 940px) {
-}
-
 @media (max-width: 845px) {
     .details {
         padding-top: 40px;
@@ -120,10 +116,30 @@
     }
 }
 
-/* Landscape phone to portrait tablet */
-@media (max-width: 768px) {
+@media (max-width: 590px) {
+    .details {
+        img {
+            box-shadow: none;
+            border: 5px solid $accent-color;
+        }
+    }
 }
 
-/* Landscape phones and down */
-@media (max-width: 480px) {
+@media (max-width: 500px) {
+    .details {
+        h2 {
+            @include secondary-font(2.5rem);
+        }
+        p {
+            font-size: 1rem;
+        }
+    }
+
+    .details__bottom--image {
+        padding-bottom: 20px;
+    }
+
+    .details__top--image {
+        padding-bottom: 20px;
+    }
 }

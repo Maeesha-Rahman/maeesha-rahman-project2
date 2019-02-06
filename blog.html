@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Chathura:400,700|Tulpen+One" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
         crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
     <title>Bar One | Blog</title>
 </head>
@@ -117,6 +118,8 @@
 
     <!-- Load in jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script>
         $(function () {
             $('.hamburger').on('click', function () {
@@ -126,6 +129,14 @@
             $('.exit').on('click', function () {
                 $('.navigation').toggleClass('show');
             });
+        });
+
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 800,
+            delay: 300,
+            once: true,
+            disable: 'mobile'
         });
     </script>
 </body>

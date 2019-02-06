@@ -75,10 +75,11 @@
             &--image {
                 width: 100%;
                 padding-bottom: 80px;
-                img {
-                    margin: 0;
-                }
             }
+            img {
+                margin: 0;
+            }
+
             &--content {
                 width: 100%;
                 text-align: center;
@@ -96,9 +97,9 @@
                 width: 100%;
                 transform: none;
                 padding-bottom: 80px;
-                img {
-                    top: 0;
-                }
+            }
+            img {
+                top: 0;
             }
             &--content {
                 width: 100%;

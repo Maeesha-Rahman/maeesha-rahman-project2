@@ -563,8 +563,8 @@ p {
       .details__top--image {
         width: 100%;
         padding-bottom: 80px; }
-        .details__top--image img {
-          margin: 0; }
+      .details__top img {
+        margin: 0; }
       .details__top--content {
         width: 100%;
         text-align: center;
@@ -585,8 +585,8 @@ p {
         -ms-transform: none;
         transform: none;
         padding-bottom: 80px; }
-        .details__bottom--image img {
-          top: 0; }
+      .details__bottom img {
+        top: 0; }
       .details__bottom--content {
         width: 100%;
         text-align: center;
